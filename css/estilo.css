@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.logo {
+    width:500px;
+    height:150px;
+}
+
+.encabezado{
+    background-color:coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px;
+    border-bottom:solid 3px #37859dff;
+   
+}
+
+footer{
+    margin:20px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+    background-color:bisque;
+}
+
+.menuNav a{
+    text-transform:uppercase;
+    font-size:1.4rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding:0;
+
+}
+
+.menuNav a:hover{
+    background-color: #c1101a;
+    color:#fafafa;
+}
+
+/* estilo main */
+
+h1{
+    text-align: center;
+}
+
+.grande{ 
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #da5100ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mediano{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    font-weight: bold;
+    color:darkblue;
+   
+}
+
+
+.contenedorFotoUno{
+    grid-area: fotouno;
+    width: 90%;
+    height: 90%;
+}
+
+.contenedorFotoDos{
+    grid-area: fotodos;
+    width: 90%;
+    height: 90%;
+}
+
+.contenedorFotoTres{
+    grid-area: fototres;
+    width: 90%;
+    height: 90%;
+}
+
+.contenedorFotoCuatro{
+    grid-area: fotocuatro;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorFotoCinco{
+    grid-area: fotocinco;
+    width: 100%;
+    height: auto;
+}
+.contenedorFotoSeis{
+    grid-area: fotocinco;
+    width: 100%;
+    height: auto;
+}
+
+.contenedorTresFotos{
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: "fotouno fotodos fototres";
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.izquierda{
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "texto fotouno";
+    
+}
+
+.derecha{
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "fotouno texto";
+    
+}
+
+.imagenCostado{
+    grid-area: fotouno;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+
+
+
+
+.requisitos ul li{
+    list-style-type: none;
+}
+
+
+form{
+    margin-top: 20px;
+    
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+
+}
+
+ 
+.cajasFormulario{
+    display: block;
+    width: 40%;
+    padding: 20px;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 2px solid black;
+
+}
+
+.boton{
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: coral;
+    border: solid 2px coral;
+    width: 100px;
+    margin: auto;
+}
+
+@media (max-width: 900px){
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    
+    .grande{
+        font-size: 1.5rem;
+    }
+
+    .mediano{
+        font-size: 1rem;
+    }
+
+    .pequenio{
+        font-size: 1rem;
+    }
+
+
+    .contenedorTresFotos{
+    column-gap: 5px;
+    padding: 0%;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "fotouno fotodos fototres";
+}
+
+  
+  
+    .derecha{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .izquierda{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .textoConPadding{
+        padding: 0%;
+    }
+
+   
+    footer{
+        font-size: 0.8rem;
+    }
+
+    .cajasFormulario{
+        width: 100%;
+    }
+
+
+}
